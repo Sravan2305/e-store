@@ -249,7 +249,13 @@ export const Cart = () => {
             </div>
           )}
           {cartProducts.length < 1 && (
-            <div  className="container-fluid flex">Please add some items from <Link to="/" >here</Link></div>
+            <div         style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "100vw",
+              height: "100vh",
+            }}>Please add some items from  <Link to="/" > here</Link></div>
           )}
 
           {showModal === true && (

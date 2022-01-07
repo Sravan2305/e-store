@@ -81,7 +81,7 @@ export const Home = (props) => {
 
   // add to cart
   const addToCart = (product) => {
-    if (uid !== null) {
+    if (uid ) {
       // console.log(product);
       Product = product;
       Product["qty"] = 1;
@@ -108,7 +108,7 @@ export const Home = (props) => {
           height: "100vh",
         }}
       >
-        Fetching new Products for you...
+        Fetching the products...
       </h2>
     );
 
